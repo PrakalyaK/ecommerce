@@ -16,7 +16,7 @@ function Header(){
         </div>
         <div className="middle-section">
           <input type="text" className="search-bar" placeholder='Search'/>
-          <button className='search-button'><img class="search-icon" src={search} alt="seacrhicon" /></button>
+          <button className='search-button'><img className="search-icon" src={search} alt="seacrhicon" /></button>
         </div>
         <div className="right-section">
              <a className="orders-link header-link" href="orders.html">

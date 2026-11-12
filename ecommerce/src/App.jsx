@@ -5,14 +5,24 @@ import viteLogo from './assets/vite.svg'
 import './App.css'
 import Header from './components/Header.jsx'
 import HomePage from './components/HomePage.jsx'
+import Checkout from './components/Checkout.jsx'
+import {BrowserRouter,Routes,Route} from 'react-router'
 
 function App() {
 
   return (
-    <>
-     <Header/>
-     <HomePage/>
-    </>
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={
+        <>
+        <Header/>
+        <HomePage/>
+        </>
+      }/>
+      <Route path="/checkout" element={<Checkout/>}/>
+    </Routes>
+    
+    </BrowserRouter>
   )
 }
 
