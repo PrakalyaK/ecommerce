@@ -462,3 +462,4 @@ export const products = [
     keywords: ["kitchen", "kitchen towels", "tissues"]
   }
 ];
+export default products;
